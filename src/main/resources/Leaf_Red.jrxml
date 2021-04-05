@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Leaf_Red" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e15d519-eab3-497d-b483-a5c1caac3ee0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.export.xls.detect.cell.type" value="false"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="json">
+		<![CDATA[empl]]>
+	</queryString>
+	<field name="firstName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="firstName"/>
+		<fieldDescription><![CDATA[firstName]]></fieldDescription>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="lastName"/>
+		<fieldDescription><![CDATA[lastName]]></fieldDescription>
+	</field>
+	<field name="phoneNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="phoneNumber"/>
+		<fieldDescription><![CDATA[phoneNumber]]></fieldDescription>
+	</field>
+	<field name="petitionSignTime" class="java.util.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="petitionSignTime"/>
+		<fieldDescription><![CDATA[petitionSignTime]]></fieldDescription>
+	</field>
+	<field name="index" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="index"/>
+		<fieldDescription><![CDATA[index]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="ea5ad761-92e5-4024-9d51-efba4363bb54"/>
+				<imageExpression><![CDATA["leaf_banner_red.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Leaf Red Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="117" y="46" width="157" height="22" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7"/>
+				<text><![CDATA[Leaf Red SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="2c4ebb21-8745-45a1-a9ad-477acaac72cb"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="111" height="15" uuid="e500b01c-9519-4f41-b1a7-f8977eecb5ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7e560a7-28e7-4584-8375-2d27c9218251"/>
+				</reportElement>
+				<text><![CDATA[firstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="111" y="19" width="111" height="15" uuid="c99dcc5d-0881-49ce-b467-8d34da537f0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79c83e1f-2407-4b4f-b2de-598d45f01f3e"/>
+				</reportElement>
+				<text><![CDATA[lastName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="222" y="19" width="111" height="15" uuid="4c19dd7f-1040-4464-85c2-f6c001b338e4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad83014f-bd47-4c7c-893c-552cda7e1feb"/>
+				</reportElement>
+				<text><![CDATA[phoneNumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="333" y="19" width="111" height="15" uuid="5d373476-0390-4ef7-a558-318a13140ceb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="30aa1140-ec5c-464b-8240-b0df179e2884"/>
+				</reportElement>
+				<text><![CDATA[petitionSignTime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="444" y="19" width="111" height="15" uuid="d58d6e57-0cad-49fb-8a49-d7cef4eaee0f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccc6371f-9b54-4925-a272-1ac865b75510"/>
+				</reportElement>
+				<text><![CDATA[index]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="ffde0804-90e8-496b-86fb-ee363619f187"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField pattern="TEXT_FORMAT">
+				<reportElement style="Detail" x="0" y="0" width="111" height="15" uuid="bbbf3b4c-3198-4389-939f-1feea828d700">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7e560a7-28e7-4584-8375-2d27c9218251"/>
+					<property name="net.sf.jasperreports.export.xls.pattern" value="@"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField pattern="TEXT_FORMAT">
+				<reportElement style="Detail" x="111" y="0" width="111" height="15" uuid="4773eedb-f019-40c8-98df-204d8c50d1f8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79c83e1f-2407-4b4f-b2de-598d45f01f3e"/>
+					<property name="net.sf.jasperreports.export.xls.pattern" value="@"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="222" y="0" width="111" height="15" uuid="b3664e8d-82ba-4194-b698-442582dfd07d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad83014f-bd47-4c7c-893c-552cda7e1feb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{phoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="333" y="0" width="111" height="15" uuid="17a9aa20-5d5f-41dd-a2bd-5297fc8ad8e3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="30aa1140-ec5c-464b-8240-b0df179e2884"/>
+					<property name="net.sf.jasperreports.export.xls.pattern" value="DD.MM.YYYY;@"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{petitionSignTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="444" y="0" width="111" height="15" uuid="23df79e0-ba0f-4b6e-93ec-f1ba3f1c3311">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccc6371f-9b54-4925-a272-1ac865b75510"/>
+					<property name="net.sf.jasperreports.export.xls.pattern" value="0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{index}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="30093aa1-3dd7-4eea-9cc9-e183637af8f4"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="c9e9a989-76ae-4c92-a08c-dba3c3185f04">
+					<property name="net.sf.jasperreports.export.xls.pattern" value="@"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="736cac2d-8f9a-48bb-b4e7-09302ce0e313">
+					<property name="net.sf.jasperreports.export.xls.pattern" value="0"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="c49bc611-71b3-4860-8112-76288860b48d">
+					<property name="net.sf.jasperreports.export.xls.pattern" value="[$-x-sysdate]DDDD, MMMM DD, YYYY"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
